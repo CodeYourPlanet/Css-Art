@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.canvas {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf1f1;
+    height: 100vh;
+    width: 100%;
+}
+
+.circle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vmin;
+    width: 80vmin;
+    border-radius: 50%;
+    background-color: #baf1b3;
+}
+
+.pot {
+    position: absolute;
+    border-bottom: 25vmin solid #689de2;
+    border-right: 7vmin solid transparent;
+    border-left: 7vmin solid transparent;
+    height: 0;
+    width: 40vmin;
+    bottom: 15vmin;
+    transform: rotate(180deg);
+    border-radius: 3vmin;
+}
+
+.eyes {
+    position: absolute;
+    height: 5vmin;
+    width: 5vmin;
+    border-radius: 50%;
+    background-color: #000;
+    bottom: -15vmin;
+    right: 18vmin;
+    box-shadow: 13vmin 0 #000;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% {transform: scale(1, 0.1);}
+}
+
+.cheeks {
+    position: absolute;
+    height: 2vmin;
+    width: 5vmin;
+    top: 8vmin;
+    background-color: pink;
+    border-radius: 50%;
+    opacity: 60%;
+    box-shadow: 19vmin 0 pink;
+}
+
+.mouth  {
+    position: absolute;
+    height: 4vmin;
+    width: 4vmin;
+    background-color: transparent;
+    top: 8vmin;
+    left: 10vmin;
+    border-radius: 50%;
+    border-top: 1vmin solid #000;
+}
+
+.cactus {
+    position: absolute;
+    height: 30vmin;
+    width: 17vmin;
+    top: 15vmin;
+    left: 25vmin;
+    background-color: #e2b623;
+    border-radius: 45%;
+    border: 1vmin solid #bea253;
+}
+
+.cactus::before {
+    content: "";
+    position: absolute;
+    height: 30vmin;
+    width: 7.5vmin;
+    left: 2.75vmin;
+    top: -1vmin;
+    background-color: transparent;
+    border-radius: 50%;
+    border-right: 1vmin solid #bea253;
+    border-left: 1vmin solid #bea253;
+}
+
+.cactusSmall {
+    position: absolute;
+    height: 20vmin;
+    width: 17vmin;
+    background-color: #e2b623;
+    top: 25vmin;
+    right: 27vmin;
+    border-radius: 45%;
+    border: 1vmin solid #bea253;
+}
+
+.cactusSmall::before {
+    content: "";
+    position: absolute;
+    height: 20vmin;
+    width: 7.5vmin;
+    left: 2.75vmin;
+    top: -1vmin;
+    background-color: transparent;
+    border-radius: 50%;
+    border-right: 1vmin solid #bea253;
+    border-left: 1vmin solid #bea253;
+}
+
